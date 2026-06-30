@@ -33,5 +33,7 @@
 #bab_item("1", "Pendahuluan")[Jelaskan tentang apa saja yang dibahas pada Bab 1. Penjelasan memuat bagian-bagian penting pada Pendahuluan.]
 #bab_item("2", "Kajian Pustaka")[Jelaskan tentang apa saja yang dibahas pada Bab 2. Penjelasan memuat bagian-bagian penting pada Kajian Pustaka.]
 #bab_item("3", "Desain Sistem")[Jelaskan tentang apa saja yang dibahas pada Bab 3. Penjelasan memuat bagian-bagian penting pada Desain Sistem.]
+#gap
+_untuk progress dan final tambahkan  bab 4 dan bab 5_
 #bab_item("4", "Eksperimen dan Analisis")[Jelaskan tentang apa saja yang dibahas pada Bab 4. Penjelasan memuat bagian-bagian penting pada Eksperimen dan Analisis.]
 #bab_item("5", "Penutup")[Jelaskan tentang apa saja yang dibahas pada Bab 5. Penjelasan memuat bagian-bagian penting pada Penutup.]
