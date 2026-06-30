@@ -244,9 +244,8 @@ tetap diambil dari `cfg.department`, jadi yang berubah karena `jenjang`
 cuma bagian "Program Studi ...".
 
 Catatan: bagian gelar dan "Mengetahui" ada di Halaman Pengesahan yang
-hanya muncul pada dokumen tahap **final** (lihat tabel `jenis_ujian` di
-atas dan `document_status` di Bagian 12). Sedangkan teks program studi di
-cover selalu tampil di semua tahap.
+hanya muncul saat `jenis_ujian = "final"` (lihat tabel `jenis_ujian` di
+atas). Sedangkan teks program studi di cover selalu tampil di semua tahap.
 
 ---
 
@@ -481,13 +480,17 @@ Di bagian atas `main.typ` ada satu baris:
 ```
 
 Nilai ini mengatur watermark diagonal transparan di **seluruh halaman**
-dokumen sekaligus menampilkan/menyembunyikan halaman pengesahan &
-pernyataan:
+dokumen sekaligus menampilkan/menyembunyikan catatan `#todo[...]`:
 
-| Nilai | Watermark | Halaman Pengesahan/Pernyataan | Catatan `#todo[...]` |
-|---|---|---|---|
-| `"draft"` | DRAFT | disembunyikan | ikut tampil (abu-abu) |
-| `"final"` | (tidak ada) | ditampilkan | disembunyikan |
+| Nilai | Watermark | Catatan `#todo[...]` |
+|---|---|---|
+| `"draft"` | DRAFT | ikut tampil (abu-abu) |
+| `"final"` | (tidak ada) | disembunyikan |
+
+> Catatan: halaman Pengesahan, Pernyataan Orisinalitas, dan Pengalihan
+> Hak Cipta **tidak** dikontrol oleh `document_status` ini, melainkan oleh
+> `jenis_ujian` — ketiganya hanya muncul saat `jenis_ujian = "final"`
+> (lihat tabel di Bagian 5).
 
 Kolom terakhir penting: catatan `#todo[...]` yang kamu tulis di naskah
 (lihat Bagian 7) **hanya hilang saat `"final"`**. Jadi sebelum
