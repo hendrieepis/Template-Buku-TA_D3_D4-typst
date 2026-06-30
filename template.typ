@@ -551,11 +551,12 @@
   // =============================================================
   // HALAMAN PENGESAHAN, PERNYATAAN ORISINALITAS & PERNYATAAN
   // PENGALIHAN HAK CIPTA (dikonversi dari bukuPA.pdf).
-  // HANYA ditampilkan saat document_status = "final"; pada
-  // "draft" ketiga halaman ini disembunyikan. Disisipkan tepat
-  // setelah halaman cover kedua, masih tanpa nomor halaman.
+  // HANYA ditampilkan saat jenis_ujian = "final"; pada
+  // "proposal"/"progress" ketiga halaman ini disembunyikan.
+  // Disisipkan tepat setelah halaman cover kedua, masih tanpa
+  // nomor halaman.
   // =============================================================
-  #if document_status == "final" {
+  #if jenis_ujian == "final" {
     halaman_pengesahan(cfg, jenjang: jenjang)
     pernyataan_orisinalitas(cfg)
     pernyataan_hak_cipta(cfg)

@@ -86,7 +86,7 @@
 //    "progress" -> judul "PROGRES PROYEK AKHIR",  Pengesahan disembunyikan
 //    "final"    -> judul "PROYEK AKHIR",          Pengesahan ditampilkan
 // -------------------------------------------------------------
-#let jenis_ujian = "proposal"
+#let jenis_ujian = "final"
 
 // -------------------------------------------------------------
 // JENJANG  -- menentukan gelar pada Halaman Pengesahan.
